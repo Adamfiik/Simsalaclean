@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simsalaclean — Rumah Bersih Rutin Tanpa Ribet</title>
+  <meta name="description" content="Jasa bersih rumah panggilan berbasis langganan di area Seminyak dan sekitarnya. Jadwal rutin, harga jelas, booking mudah." />
+
+  <!-- GA4 Placeholder — ganti dengan Measurement ID kamu -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
+
+  <!-- Google Ads Conversion Placeholder -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+  <script>
+    function gtag_report_conversion(url) {
+      gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXXX/XXXXXXXXXX'});
+      return false;
+    }
+  </script> -->
+
+  <link rel="icon" type="image/png" href="assets/simsalaclean_logo_badge_transparent.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="#" class="navbar__logo">
+      <img src="assets/simsalaclean_logo_no_badge_transparent.webp" alt="Simsalaclean" height="40" />
+    </a>
+    <nav class="navbar__links" id="navLinks">
+      <a href="#paket">Paket</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#area">Area</a>
+      <a href="#faq">FAQ</a>
+      <a href="#early-access" class="btn btn--nav">Daftar Early Access</a>
+    </nav>
+    <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- SECTION 1: HERO -->
+<section class="hero" id="home">
+  <div class="container hero__inner">
+    <div class="hero__badge">🎉 Early Access — Diskon Rp75.000 untuk bulan pertama</div>
+    <h1 class="hero__headline">Rumah Bersih Rutin<br /><span class="highlight">Tanpa Ribet</span></h1>
+    <p class="hero__sub">Simsalaclean membantu kamu menjaga rumah tetap rapi dan nyaman dengan layanan bersih rumah panggilan berbasis langganan di area Seminyak dan sekitarnya.</p>
+    <div class="hero__trust">
+      <span>📅 Jadwal rutin</span>
+      <span>💰 Harga jelas</span>
+      <span>📱 Report via WhatsApp</span>
+    </div>
+    <!-- HERO FORM -->
+    <div class="form-card" id="hero-form-card">
+      <p class="form-card__label">Daftar Early Access</p>
+      <form class="early-form" id="heroForm" novalidate>
+        <input type="text" name="nama" placeholder="Nama kamu" required autocomplete="name" />
+        <input type="text" name="instagram" placeholder="Username Instagram (tanpa @)" required />
+        <input type="hidden" name="source" value="hero" />
+        <label class="checkbox-label">
+          <input type="checkbox" id="heroPrivacy" required />
+          <span>Saya menyetujui <button type="button" class="link-btn" onclick="openPrivacy()">Privacy Policy</button> dan memahami data saya diproses sesuai standar GDPR.</span>
+        </label>
+        <button type="submit" class="btn btn--primary btn--full">Daftar Early Access</button>
+      </form>
+    </div>
+  </div>
+  <div class="hero__wave"></div>
+</section>
+
+<!-- SECTION 2: PROBLEM -->
+<section class="section section--cream" id="problem">
+  <div class="container">
+    <h2 class="section__title">Rumah Cepat Kotor,<br />Tapi Kamu Tidak Sempat Bersih-bersih?</h2>
+    <p class="section__sub">Tinggal di area Seminyak bisa terasa sibuk. Debu cepat datang, dapur cepat berantakan, dan kamar mandi butuh dibersihkan rutin. Masalahnya, mencari cleaner dadakan setiap minggu sering tidak praktis.</p>
+    <div class="pain-grid">
+      <div class="pain-card"><span class="pain-icon">😩</span><p>Tidak sempat bersih-bersih setelah kerja</p></div>
+      <div class="pain-card"><span class="pain-icon">❓</span><p>Jadwal cleaner tidak pasti dan tidak bisa diandalkan</p></div>
+      <div class="pain-card"><span class="pain-icon">🔍</span><p>Bingung mencari cleaner yang bisa dipercaya</p></div>
+      <div class="pain-card"><span class="pain-icon">🙅</span><p>Tidak ingin punya ART full-time</p></div>
+      <div class="pain-card"><span class="pain-icon">🏠</span><p>Ingin rumah tetap nyaman setiap minggu</p></div>
+      <div class="pain-card"><span class="pain-icon">💸</span><p>Ingin harga yang jelas sebelum booking</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: SOLUTION -->
+<section class="section" id="solution">
+  <div class="container">
+    <h2 class="section__title">Simsalaclean Hadir untuk<br />Bantu Rumah Tetap Nyaman</h2>
+    <p class="section__sub">Dengan sistem langganan, kamu bisa punya jadwal cleaning rutin tanpa perlu booking ulang dari nol setiap minggu. Pilih paket, tentukan jadwal, lalu tim Simsalaclean datang sesuai slot yang tersedia.</p>
+    <div class="benefit-grid">
+      <div class="benefit-card"><div class="benefit-icon">📅</div><h3>Jadwal Rutin</h3><p>Cleaning terjadwal rutin setiap minggu atau 2 minggu sekali tanpa perlu re-booking.</p></div>
+      <div class="benefit-card"><div class="benefit-icon">💰</div><h3>Harga Jelas</h3><p>Harga paket bulanan transparan. Tidak ada biaya tersembunyi.</p></div>
+      <div class="benefit-card"><div class="benefit-icon">📱</div><h3>Report via WhatsApp</h3><p>Setiap selesai cleaning, kamu menerima laporan singkat via WhatsApp.</p></div>
+      <div class="benefit-card"><div class="benefit-icon">📍</div><h3>Fokus Area Seminyak</h3><p>Layanan terfokus di Seminyak dan sekitar radius 10 km untuk kualitas yang konsisten.</p></div>
+      <div class="benefit-card"><div class="benefit-icon">✅</div><h3>Checklist Pekerjaan</h3><p>Setiap kunjungan mengikuti checklist standar agar tidak ada yang terlewat.</p></div>
+      <div class="benefit-card"><div class="benefit-icon">✨</div><h3>Tanpa Cari Cleaner Lagi</h3><p>Tidak perlu repot mencari dan menghubungi cleaner baru setiap minggu.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: PAKET LANGGANAN -->
+<section class="section section--blue-light" id="paket">
+  <div class="container">
+    <h2 class="section__title">Pilih Paket Langganan<br />yang Cocok untuk Rumah Kamu</h2>
+    <p class="section__sub">Nikmati layanan bersih rumah rutin tanpa perlu mencari cleaner baru setiap minggu.</p>
+    <div class="paket-grid">
+
+      <!-- Paket Rapi -->
+      <div class="paket-card">
+        <div class="paket-badge paket-badge--hemat">Paling Hemat</div>
+        <img src="assets/Paket Rapi 2 Mingguan.webp" alt="Paket Rapi 2 Mingguan" class="paket-img" />
+        <div class="paket-body">
+          <h3 class="paket-name">Paket Rapi 2 Mingguan</h3>
+          <p class="paket-desc">Untuk rumah yang ingin tetap rapi dengan jadwal cleaning rutin setiap 2 minggu.</p>
+          <div class="paket-price">
+            <span class="price-orig">Rp665.000</span>
+            <span class="price-main">Rp590.000<span class="price-per">/bulan</span></span>
+            <span class="price-promo">🎉 Early Access: Rp515.000 bulan pertama</span>
+          </div>
+          <ul class="paket-list">
+            <li>✅ 2x kunjungan per bulan</li>
+            <li>✅ 3 jam per kunjungan</li>
+            <li>✅ 1 cleaner</li>
+            <li>✅ Basic tools & cleaning supplies</li>
+            <li>✅ Checklist pekerjaan</li>
+            <li>✅ Report via WhatsApp</li>
+          </ul>
+          <p class="paket-cocok">Cocok untuk: studio, apartemen, rumah kecil, villa 1–2 kamar</p>
+          <a href="#early-access" class="btn btn--outline btn--full">Pilih Paket Ini</a>
+        </div>
+      </div>
+
+      <!-- Paket Fresh -->
+      <div class="paket-card paket-card--featured">
+        <div class="paket-badge paket-badge--recommended">Paling Direkomendasikan</div>
+        <img src="assets/Paket Fresh Mingguan.webp" alt="Paket Fresh Mingguan" class="paket-img" />
+        <div class="paket-body">
+          <h3 class="paket-name">Paket Fresh Mingguan</h3>
+          <p class="paket-desc">Untuk kamu yang ingin rumah terasa bersih dan nyaman setiap minggu.</p>
+          <div class="paket-price">
+            <span class="price-orig">Rp1.225.000</span>
+            <span class="price-main">Rp1.150.000<span class="price-per">/bulan</span></span>
+            <span class="price-promo">🎉 Early Access: Rp1.075.000 bulan pertama</span>
+          </div>
+          <ul class="paket-list">
+            <li>✅ 4x kunjungan per bulan</li>
+            <li>✅ 3 jam per kunjungan</li>
+            <li>✅ 1 cleaner</li>
+            <li>✅ Basic tools & cleaning supplies</li>
+            <li>✅ Checklist pekerjaan</li>
+            <li>✅ Prioritas jadwal mingguan</li>
+            <li>✅ Report via WhatsApp</li>
+          </ul>
+          <p class="paket-cocok">Cocok untuk: rumah, apartemen, villa kecil-menengah yang cepat berdebu</p>
+          <a href="#early-access" class="btn btn--primary btn--full">Pilih Paket Ini</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: LAYANAN PENDUKUNG -->
+<section class="section" id="layanan">
+  <div class="container">
+    <h2 class="section__title">Butuh Cleaning Tambahan?</h2>
+    <p class="section__sub">Tambahkan layanan sesuai kebutuhan rumah kamu sebagai pelengkap paket langganan.</p>
+    <div class="addon-grid">
+      <div class="addon-card"><div class="addon-icon">⏱️</div><h4>Extra Hour</h4><p>Tambahan waktu jika 3 jam belum cukup.</p><span class="addon-price">Rp85.000 / jam</span></div>
+      <div class="addon-card"><div class="addon-icon">🚿</div><h4>Bathroom Detail Cleaning</h4><p>Pembersihan detail toilet, wastafel, dan lantai kamar mandi.</p><span class="addon-price">Rp150.000 / kamar mandi</span></div>
+      <div class="addon-card"><div class="addon-icon">🍳</div><h4>Kitchen Detail Cleaning</h4><p>Pembersihan kompor, meja dapur, sink, dan noda minyak ringan.</p><span class="addon-price">Mulai Rp250.000</span></div>
+      <div class="addon-card"><div class="addon-icon">🧹</div><h4>Deep Cleaning</h4><p>Pembersihan menyeluruh untuk rumah yang butuh perhatian ekstra.</p><span class="addon-price">Mulai Rp750.000</span></div>
+      <div class="addon-card"><div class="addon-icon">📦</div><h4>Move In / Move Out Cleaning</h4><p>Cleaning sebelum masuk atau setelah keluar dari rumah, villa, atau apartemen.</p><span class="addon-price">Mulai Rp850.000</span></div>
+    </div>
+    <p class="addon-note">Harga dapat menyesuaikan ukuran dan kondisi rumah. Tim Simsalaclean akan melakukan konfirmasi kebutuhan sebelum jadwal cleaning.</p>
+  </div>
+</section>
+
+<!-- SECTION 6: CARA BOOKING -->
+<section class="section section--cream" id="booking">
+  <div class="container">
+    <h2 class="section__title">Cara Daftar Simsalaclean</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-visual">
+          <div class="step-num">1</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/><line x1="9" y1="15" x2="12" y2="15"/></svg>
+          </div>
+        </div>
+        <h4>Isi Form</h4><p>Isi nama dan username Instagram kamu di form early access.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-visual">
+          <div class="step-num">2</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+        </div>
+        <h4>Pilih Paket</h4><p>Tim kami akan menghubungi kamu untuk konfirmasi paket yang sesuai.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-visual">
+          <div class="step-num">3</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01"/></svg>
+          </div>
+        </div>
+        <h4>Konfirmasi Area & Jadwal</h4><p>Tim mengonfirmasi area dan slot jadwal yang tersedia.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-visual">
+          <div class="step-num">4</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+        </div>
+        <h4>Cleaner Datang</h4><p>Cleaner hadir sesuai jadwal yang sudah disepakati.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-visual">
+          <div class="step-num">5</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><polyline points="9 10 12 13 16 8"/></svg>
+          </div>
+        </div>
+        <h4>Terima Report</h4><p>Kamu menerima report singkat setelah cleaning selesai via WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: AREA LAYANAN -->
+<section class="section" id="area">
+  <div class="container area__inner">
+    <div class="area__text">
+      <h2 class="section__title text-left">Fokus Melayani Area<br />Seminyak dan Sekitarnya</h2>
+      <p>Untuk menjaga kualitas dan ketepatan jadwal, Simsalaclean saat ini hanya melayani area Seminyak dan sekitarnya maksimal <strong>radius 10 km</strong>.</p>
+      <ul class="area-list">
+        <li>📍 Seminyak</li>
+        <li>📍 Petitenget</li>
+        <li>📍 Kerobokan Kelod</li>
+        <li>📍 Legian</li>
+        <li>📍 Umalas</li>
+        <li>📍 Batubelig</li>
+        <li>📍 Dan area sekitar dalam radius 10 km</li>
+      </ul>
+    </div>
+    <div class="area__map">
+      <iframe
+        title="Peta Area Layanan Simsalaclean"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31596.1!2d115.166!3d-8.693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1"
+        width="100%" height="320" style="border:0;border-radius:16px;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: EARLY ACCESS -->
+<section class="section section--blue" id="early-access">
+  <div class="container">
+    <div class="early-inner">
+      <div class="early-text">
+        <div class="early-badge">Early Access</div>
+        <h2 class="section__title text-white text-left">Daftar Early Access<br />Simsalaclean</h2>
+        <p class="text-white-soft">Simsalaclean belum launching secara penuh. Kami sedang membuka early access untuk customer pertama di area Seminyak dan sekitarnya.</p>
+        <div class="early-promo">
+          <span class="promo-icon">🎉</span>
+          <div>
+            <strong>Diskon Rp75.000</strong> untuk langganan bulan pertama.<br />
+            <small>Berlaku untuk 20 customer pertama.</small>
+          </div>
+        </div>
+      </div>
+      <div class="form-card form-card--white" id="early-form-card">
+        <p class="form-card__label">Daftar sekarang — tanpa komitmen</p>
+        <form class="early-form" id="earlyForm" novalidate>
+          <input type="text" name="nama" placeholder="Nama kamu" required autocomplete="name" />
+          <input type="text" name="instagram" placeholder="Username Instagram (tanpa @)" required />
+          <input type="hidden" name="source" value="early-access" />
+          <label class="checkbox-label">
+            <input type="checkbox" id="earlyPrivacy" required />
+            <span>Saya menyetujui <button type="button" class="link-btn" onclick="openPrivacy()">Privacy Policy</button> dan memahami data saya diproses sesuai standar GDPR.</span>
+          </label>
+          <button type="submit" class="btn btn--yellow btn--full">Daftar Early Access</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 9: FAQ -->
+<section class="section section--cream" id="faq">
+  <div class="container">
+    <h2 class="section__title">Pertanyaan yang Sering Ditanyakan</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Apakah Simsalaclean sudah launching? <span class="faq-icon">+</span></button>
+        <div class="faq-a">Belum sepenuhnya. Saat ini Simsalaclean sedang membuka early access untuk validasi layanan di area Seminyak dan sekitarnya. Customer yang daftar sekarang mendapatkan diskon Rp75.000 untuk bulan pertama.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Apakah bisa booking satu kali saja? <span class="faq-icon">+</span></button>
+        <div class="faq-a">Fokus utama Simsalaclean adalah paket langganan. Namun, kamu bisa menghubungi kami untuk menanyakan ketersediaan layanan satu kali.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Apakah alat cleaning disediakan? <span class="faq-icon">+</span></button>
+        <div class="faq-a">Ya, basic tools dan cleaning supplies standar disediakan. Untuk kebutuhan khusus, tim akan mengonfirmasi melalui WhatsApp.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Berapa lama durasi cleaning per kunjungan? <span class="faq-icon">+</span></button>
+        <div class="faq-a">Setiap kunjungan berdurasi 3 jam. Jika butuh waktu tambahan, tersedia layanan Extra Hour dengan biaya Rp85.000/jam.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Area mana saja yang dilayani? <span class="faq-icon">+</span></button>
+        <div class="faq-a">Area utama adalah Seminyak, Petitenget, Kerobokan Kelod, Legian, Umalas, Batubelig, dan sekitarnya dengan radius maksimal 10 km dari Seminyak.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Apakah harga bisa berubah? <span class="faq-icon">+</span></button>
+        <div class="faq-a">Harga dapat menyesuaikan ukuran dan kondisi rumah. Tim akan melakukan konfirmasi kebutuhan melalui WhatsApp sebelum jadwal cleaning dimulai.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 10: FINAL CTA -->
+<section class="section section--cta">
+  <div class="container text-center">
+    <h2 class="section__title">Siap Punya Rumah yang<br />Lebih Rapi Setiap Minggu?</h2>
+    <p class="section__sub">Mulai dari jadwal cleaning rutin yang simpel dan jelas bersama Simsalaclean.</p>
+    <a href="#early-access" class="btn btn--primary btn--lg">Daftar Early Access Sekarang</a>
+    <p class="cta-note">Daftar sekarang. Tidak ada komitmen sampai kamu konfirmasi paket.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/simsalaclean_logo_badge_transparent.webp" alt="Simsalaclean" height="48" />
+      <p>Jasa bersih rumah panggilan berbasis langganan untuk area Seminyak dan sekitarnya.</p>
+    </div>
+    <div class="footer__links">
+      <a href="#paket">Paket</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#area">Area</a>
+      <a href="#faq">FAQ</a>
+      <button type="button" class="link-btn footer-privacy" onclick="openPrivacy()">Privacy Policy</button>
+    </div>
+    <div class="footer__gdpr">
+      <span class="gdpr-badge">🔒 GDPR Compliant</span>
+      <p>Website ini memproses data pribadi sesuai dengan ketentuan <strong>General Data Protection Regulation (GDPR)</strong>. Kami hanya mengumpulkan data yang diperlukan dan tidak menjualnya kepada pihak ketiga.</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2024 Simsalaclean. All rights reserved. | <button type="button" class="link-btn" onclick="openPrivacy()">Privacy Policy</button></p>
+  </div>
+</footer>
+
+<!-- PRIVACY POLICY MODAL -->
+<div class="modal-overlay" id="privacyModal" onclick="closePrivacyOutside(event)">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+    <div class="modal-header">
+      <h2 id="privacyTitle">Privacy Policy</h2>
+      <button class="modal-close" onclick="closePrivacy()" aria-label="Tutup">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p><strong>Terakhir diperbarui:</strong> Juni 2024</p>
+      <p>Simsalaclean (<strong>"kami"</strong>) berkomitmen untuk melindungi privasi pengguna. Kebijakan privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi data pribadi kamu.</p>
+      <h3>1. Data yang Kami Kumpulkan</h3>
+      <p>Kami mengumpulkan data berikut ketika kamu mengisi form early access:</p>
+      <ul><li>Nama lengkap</li><li>Username Instagram</li></ul>
+      <h3>2. Tujuan Penggunaan Data</h3>
+      <p>Data digunakan semata-mata untuk:</p>
+      <ul><li>Menghubungi kamu terkait early access Simsalaclean</li><li>Mengonfirmasi ketersediaan layanan di area kamu</li></ul>
+      <h3>3. Dasar Hukum Pemrosesan (GDPR)</h3>
+      <p>Kami memproses data berdasarkan persetujuan eksplisit kamu (Article 6(1)(a) GDPR). Kamu dapat menarik persetujuan kapan saja.</p>
+      <h3>4. Penyimpanan Data</h3>
+      <p>Data disimpan secara aman di Google Sheets yang hanya dapat diakses oleh tim Simsalaclean. Kami tidak menjual, menyewakan, atau membagikan data kamu kepada pihak ketiga.</p>
+      <h3>5. Retensi Data</h3>
+      <p>Data disimpan selama diperlukan untuk tujuan yang disebutkan di atas, atau hingga kamu meminta penghapusan data.</p>
+      <h3>6. Hak Kamu (GDPR)</h3>
+      <p>Sebagai subjek data, kamu memiliki hak:</p>
+      <ul><li><strong>Akses</strong> — meminta salinan data pribadi yang kami simpan</li><li><strong>Koreksi</strong> — meminta perbaikan data yang tidak akurat</li><li><strong>Penghapusan</strong> — meminta penghapusan data kamu</li><li><strong>Portabilitas</strong> — meminta data dalam format yang dapat dibaca mesin</li><li><strong>Keberatan</strong> — keberatan terhadap pemrosesan data kamu</li></ul>
+      <h3>7. Cookies & Tracking</h3>
+      <p>Website ini menggunakan Google Analytics 4 dan Google Ads Conversion Tracking untuk menganalisis performa halaman. Data ini bersifat anonim dan tidak mengidentifikasi kamu secara pribadi.</p>
+      <h3>8. Hubungi Kami</h3>
+      <p>Untuk pertanyaan atau permintaan terkait data pribadi, hubungi kami di: <a href="mailto:hello@simsalaclean.com">hello@simsalaclean.com</a></p>
+      <div class="gdpr-notice">🔒 Website ini mematuhi ketentuan <strong>General Data Protection Regulation (GDPR)</strong> Uni Eropa.</div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn--primary" onclick="closePrivacy()">Saya Mengerti</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
