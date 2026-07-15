@@ -24,7 +24,20 @@ navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
-// --- Privacy Policy Modal ---
+// --- Success Modal ---
+function openSuccess(nama, instagram) {
+  document.getElementById('successName').textContent = nama;
+  document.getElementById('successIg').textContent = instagram;
+  document.getElementById('successModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeSuccess() {
+  document.getElementById('successModal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+function closeSuccessOutside(e) {
+  if (e.target === document.getElementById('successModal')) closeSuccess();
+}
 function openPrivacy() {
   document.getElementById('privacyModal').classList.add('active');
   document.body.style.overflow = 'hidden';
@@ -36,9 +49,12 @@ function closePrivacy() {
 function closePrivacyOutside(e) {
   if (e.target === document.getElementById('privacyModal')) closePrivacy();
 }
-// Close modal on ESC key
+// Close modals on ESC key
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closePrivacy();
+  if (e.key === 'Escape') {
+    closePrivacy();
+    closeSuccess();
+  }
 });
 
 // --- FAQ accordion ---
@@ -121,6 +137,7 @@ function handleFormSubmit(form) {
     if (!validateForm(form)) return;
 
     const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
     submitBtn.disabled = true;
     submitBtn.textContent = 'Mengirim...';
 
@@ -134,8 +151,13 @@ function handleFormSubmit(form) {
     const success = await submitToSheets(payload);
 
     if (success) {
-      // Redirect to thank-you page
-      window.location.href = 'thank-you.html';
+      // Show success modal and reset form
+      openSuccess(payload.nama, payload.instagram);
+      form.reset();
+      form.querySelectorAll('.form-error').forEach(el => el.remove());
+      form.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
     } else {
       submitBtn.disabled = false;
       submitBtn.textContent = 'Coba Lagi';

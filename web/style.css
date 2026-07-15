@@ -366,6 +366,21 @@ ul { list-style: none; }
 /* --- Error message --- */
 .form-error { font-size: 0.82rem; color: #e05252; margin-top: -8px; }
 
+/* --- Success Modal --- */
+.modal-box--success { max-width: 460px; }
+.modal-body--success { text-align: center; padding: 32px 28px; }
+.success-icon { font-size: 3.5rem; margin-bottom: 16px; animation: pop 0.4s ease; }
+@keyframes pop { 0%{transform:scale(0.5);opacity:0} 80%{transform:scale(1.1)} 100%{transform:scale(1);opacity:1} }
+.modal-body--success p { font-size: 0.97rem; color: var(--text-soft); margin-bottom: 10px; line-height: 1.6; }
+.modal-body--success strong { color: var(--text); }
+.success-promo {
+  display: flex; align-items: flex-start; gap: 10px;
+  background: #FBF8F2; border: 1.5px solid var(--yellow);
+  border-radius: 12px; padding: 14px 16px; margin-top: 20px;
+  font-size: 0.9rem; color: var(--text-soft); text-align: left;
+}
+.success-promo strong { color: var(--text); }
+
 /* --- Responsive --- */
 @media (max-width: 1000px) {
   .addon-grid { grid-template-columns: repeat(3, 1fr); }

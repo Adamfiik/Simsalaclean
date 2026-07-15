@@ -357,6 +357,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
+<!-- SUCCESS MODAL -->
+<div class="modal-overlay" id="successModal" onclick="closeSuccessOutside(event)">
+  <div class="modal-box modal-box--success" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+    <div class="modal-header">
+      <h2 id="successTitle">Pendaftaran Berhasil!</h2>
+      <button class="modal-close" onclick="closeSuccess()" aria-label="Tutup">&times;</button>
+    </div>
+    <div class="modal-body modal-body--success">
+      <div class="success-icon">🎉</div>
+      <p>Terima kasih, <strong id="successName"></strong>! Data kamu sudah kami terima.</p>
+      <p>Tim Simsalaclean akan menghubungi kamu melalui Instagram <strong>@<span id="successIg"></span></strong> untuk konfirmasi lebih lanjut.</p>
+      <div class="success-promo">
+        <span>🏷️</span>
+        <span>Diskon <strong>Rp75.000</strong> untuk langganan bulan pertama berlaku setelah konfirmasi paket.</span>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn--primary btn--full" onclick="closeSuccess()">Oke, Sampai Jumpa!</button>
+    </div>
+  </div>
+</div>
+
 <!-- PRIVACY POLICY MODAL -->
 <div class="modal-overlay" id="privacyModal" onclick="closePrivacyOutside(event)">
   <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
