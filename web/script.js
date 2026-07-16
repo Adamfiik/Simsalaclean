@@ -151,6 +151,15 @@ function handleFormSubmit(form) {
     const success = await submitToSheets(payload);
 
     if (success) {
+      // Push GA4 lead event to dataLayer
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'generate_lead',
+        form_source: payload.source,   // 'hero' atau 'early-access'
+        lead_type: 'early_access',
+      });
+      console.log('[Simsalaclean] dataLayer pushed:', window.dataLayer);
+
       // Show success modal and reset form
       openSuccess(payload.nama, payload.instagram);
       form.reset();
